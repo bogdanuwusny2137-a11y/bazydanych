@@ -1,0 +1,76 @@
+<!--
+    ptoszek.pl - 404
+    Powered by Jaczup
+-->
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 - Ptoszek nie znaleziony</title>
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir,
+        'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial,
+        sans-serif;
+      overflow: hidden;
+      background: #34eb7d;
+    }
+    .center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 8em;
+      margin: 0;
+      color: #fff;
+      text-shadow: 4px 4px 0 #222;
+    }
+    p {
+      font-size: 1.5em;
+      color: #222;
+      max-width: 600px;
+    }
+    img {
+      width: 200px;
+      border-radius: 50%;
+      margin: 20px 0;
+      animation: spin 2s linear infinite;
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    a {
+      color: #fff;
+      background: #222;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: transform 0.2s;
+    }
+    a:hover {
+      transform: scale(1.1);
+    }
+  </style>
+  <link rel="icon" type="image/x-icon" href="media/images/ptok.jpg">
+</head>
+<body>
+  <div class="center">
+    <h1>404</h1>
+    <img src="media/images/ptok.jpg" alt="Zdziwiony ptok">
+    <p>Nie ma takiej strony!<br>Ptoszek gdzieś odfrunął...</p>
+    <a href="/">Wróć do Ptoszka</a>
+  </div>
+</body>
+</html>
